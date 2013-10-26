@@ -16,6 +16,7 @@
 		FA503F39151FD71B00901B32 /* AWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA503F38151FD71B00901B32 /* AWViewController.m */; };
 		FA503F3C151FD71B00901B32 /* AWViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA503F3A151FD71B00901B32 /* AWViewController_iPhone.xib */; };
 		FA503F3F151FD71B00901B32 /* AWViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA503F3D151FD71B00901B32 /* AWViewController_iPad.xib */; };
+		FA503F46151FD72900901B32 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA503F45151FD72900901B32 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +24,17 @@
 		FA503F25151FD71B00901B32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FA503F27151FD71B00901B32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FA503F29151FD71B00901B32 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		FA503F2D151FD71B00901B32 /* Air Ruler-Info.plist */ = {isa = PBXFileReference; path = "Air Ruler-Info.plist"; sourceTree = "<group>"; };
+		FA503F2D151FD71B00901B32 /* Air Ruler-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Air Ruler-Info.plist"; sourceTree = "<group>"; };
 		FA503F2F151FD71B00901B32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FA503F31151FD71B00901B32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FA503F33151FD71B00901B32 /* Air Ruler-Prefix.pch */ = {isa = PBXFileReference; path = "Air Ruler-Prefix.pch"; sourceTree = "<group>"; };
-		FA503F34151FD71B00901B32 /* AWAppDelegate.h */ = {isa = PBXFileReference; path = AWAppDelegate.h; sourceTree = "<group>"; };
+		FA503F33151FD71B00901B32 /* Air Ruler-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Air Ruler-Prefix.pch"; sourceTree = "<group>"; };
+		FA503F34151FD71B00901B32 /* AWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWAppDelegate.h; sourceTree = "<group>"; };
 		FA503F35151FD71B00901B32 /* AWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWAppDelegate.m; sourceTree = "<group>"; };
-		FA503F37151FD71B00901B32 /* AWViewController.h */ = {isa = PBXFileReference; path = AWViewController.h; sourceTree = "<group>"; };
+		FA503F37151FD71B00901B32 /* AWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWViewController.h; sourceTree = "<group>"; };
 		FA503F38151FD71B00901B32 /* AWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWViewController.m; sourceTree = "<group>"; };
 		FA503F3B151FD71B00901B32 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AWViewController_iPhone.xib; sourceTree = "<group>"; };
 		FA503F3E151FD71B00901B32 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AWViewController_iPad.xib; sourceTree = "<group>"; };
+		FA503F45151FD72900901B32 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA503F46151FD72900901B32 /* CoreMotion.framework in Frameworks */,
 				FA503F26151FD71B00901B32 /* UIKit.framework in Frameworks */,
 				FA503F28151FD71B00901B32 /* Foundation.framework in Frameworks */,
 				FA503F2A151FD71B00901B32 /* CoreGraphics.framework in Frameworks */,
@@ -52,6 +55,7 @@
 		FA503F16151FD71B00901B32 = {
 			isa = PBXGroup;
 			children = (
+				FA503F45151FD72900901B32 /* CoreMotion.framework */,
 				FA503F2B151FD71B00901B32 /* Air Ruler */,
 				FA503F24151FD71B00901B32 /* Frameworks */,
 				FA503F22151FD71B00901B32 /* Products */,
@@ -130,6 +134,11 @@
 				CLASSPREFIX = AW;
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Datta Lab, Harvard University";
+				TargetAttributes = {
+					FA503F20151FD71B00901B32 = {
+						DevelopmentTeam = G4W97M7754;
+					};
+				};
 			};
 			buildConfigurationList = FA503F1B151FD71B00901B32 /* Build configuration list for PBXProject "Air Ruler" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -250,10 +259,13 @@
 		FA503F43151FD71B00901B32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Air Ruler/Air Ruler-Prefix.pch";
 				INFOPLIST_FILE = "Air Ruler/Air Ruler-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -261,10 +273,13 @@
 		FA503F44151FD71B00901B32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Air Ruler/Air Ruler-Prefix.pch";
 				INFOPLIST_FILE = "Air Ruler/Air Ruler-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -288,6 +303,7 @@
 				FA503F44151FD71B00901B32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
